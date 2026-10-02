@@ -1,0 +1,33 @@
+# DBDPI hostlist: desync применяется только к этим доменам (+ поддомены).
+# Формат: один домен на строку, # — комментарий. Редактируйте под себя.
+# Без этого файла стратегия применяется ко ВСЕМ сайтам (портам 80/443).
+
+# --- YouTube ---
+youtube.com
+youtu.be
+googlevideo.com
+ytimg.com
+ggpht.com
+
+# --- Discord ---
+discord.com
+discord.gg
+discordapp.com
+discordapp.net
+discord.media
+
+# --- прочее часто блокируемое ---
+twitch.tv
+rutracker.org
+twitter.com
+x.com
+twimg.com
+instagram.com
+cdninstagram.com
+facebook.com
+fbcdn.net
+wikipedia.org
+2ch.su
+2ch.hk
+osu.ppy.sh
+pppy.sh

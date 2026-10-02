@@ -1,0 +1,8 @@
+# Домены, которые НИКОГДА не трогать (даже если они в hostlist).
+# Пример: банки и платёжные системы, чтобы не ломать TLS.
+sberbank.ru
+sbrf.ru
+online.sberbank.ru
+tinkoff.ru
+gov.ru
+gosuslugi.ru

@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="340" viewBox="0 0 1280 340" role="img" aria-label="Dice Bypass DPI">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#060a14"/>
+      <stop offset="0.4" stop-color="#0c1628"/>
+      <stop offset="1" stop-color="#141e38"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4fc3f7"/>
+      <stop offset="0.5" stop-color="#7c6fff"/>
+      <stop offset="1" stop-color="#b388ff"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#4fc3f7" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#4fc3f7" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#4fc3f7" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stream1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1a3a5c"/>
+      <stop offset="1" stop-color="#4fc3f7"/>
+    </linearGradient>
+    <linearGradient id="stream2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7c6fff"/>
+      <stop offset="1" stop-color="#b388ff"/>
+    </linearGradient>
+    <filter id="dieShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="12" flood-color="#4fc3f7" flood-opacity="0.25"/>
+    </filter>
+    <filter id="textGlow">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#4fc3f7" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- background -->
+  <rect width="1280" height="340" fill="url(#bg)"/>
+
+  <!-- top accent line -->
+  <rect x="0" y="0" width="1280" height="4" fill="url(#accent)"/>
+
+  <!-- subtle grid pattern -->
+  <g opacity="0.04" stroke="#4fc3f7" stroke-width="0.5">
+    <line x1="0" y1="85" x2="1280" y2="85"/>
+    <line x1="0" y1="170" x2="1280" y2="170"/>
+    <line x1="0" y1="255" x2="1280" y2="255"/>
+  </g>
+
+  <!-- die icon -->
+  <g transform="translate(80,86)" filter="url(#dieShadow)">
+    <rect x="0" y="0" width="160" height="160" rx="28" fill="#0a1428"
+          stroke="url(#accent)" stroke-width="3"/>
+    <!-- dots -->
+    <circle cx="44" cy="44" r="13" fill="#4fc3f7" opacity="0.9"/>
+    <circle cx="116" cy="44" r="13" fill="#4fc3f7" opacity="0.9"/>
+    <circle cx="80" cy="80" r="14" fill="url(#accent)"/>
+    <circle cx="44" cy="116" r="13" fill="#4fc3f7" opacity="0.9"/>
+    <circle cx="116" cy="116" r="13" fill="#4fc3f7" opacity="0.9"/>
+    <!-- inner glow -->
+    <circle cx="80" cy="80" r="14" fill="none" stroke="#4fc3f7" stroke-width="1" opacity="0.3"/>
+  </g>
+
+  <!-- title -->
+  <text x="294" y="148" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="64" font-weight="800" fill="#eef4ff" letter-spacing="3"
+        filter="url(#textGlow)">DICE BYPASS DPI</text>
+
+  <!-- subtitle -->
+  <text x="298" y="196" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+        font-size="22" fill="#7fa5c9" letter-spacing="0.5">DPI / TSPU desync for Windows &#183; C11 &#183; WinDivert &#183; GPL-3.0</text>
+
+  <!-- fragmented stream visualization -->
+  <g transform="translate(298,238)">
+    <!-- segment 1 -->
+    <rect x="0" y="2" width="108" height="8" rx="4" fill="url(#stream1)" opacity="0.9"/>
+    <!-- gap -->
+    <rect x="120" y="-4" width="88" height="8" rx="4" fill="#2a5080" opacity="0.7"/>
+    <!-- fake packet (dashed outline) -->
+    <rect x="220" y="8" width="88" height="8" rx="4" fill="none" stroke="#7c6fff" stroke-width="1.5" stroke-dasharray="4 3" opacity="0.6"/>
+    <!-- segment 2 -->
+    <rect x="320" y="-2" width="108" height="8" rx="4" fill="url(#stream2)" opacity="0.85"/>
+    <!-- segment 3 -->
+    <rect x="440" y="6" width="108" height="8" rx="4" fill="#4fc3f7" opacity="0.7"/>
+    <!-- segment 4 -->
+    <rect x="560" y="-4" width="88" height="8" rx="4" fill="url(#stream1)" opacity="0.6"/>
+
+    <!-- strategy labels -->
+    <text x="696" y="9" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="15" fill="#4a6b8a" letter-spacing="1.5">split &#183; disorder &#183; fake &#183; fakedsplit</text>
+  </g>
+
+  <!-- bottom accent line -->
+  <rect x="0" y="336" width="1280" height="4" fill="url(#accent)" opacity="0.4"/>
+
+  <!-- version badge -->
+  <g transform="translate(1132,62)">
+    <rect x="0" y="0" width="80" height="28" rx="14" fill="#0c1628" stroke="#2a5080" stroke-width="1"/>
+    <text x="40" y="18" text-anchor="middle" font-family="'Segoe UI', Roboto, Helvetica, Arial, sans-serif"
+          font-size="14" fill="#7fa5c9" font-weight="600">v0.1.0</text>
+  </g>
+</svg>
